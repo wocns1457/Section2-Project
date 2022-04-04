@@ -77,17 +77,17 @@ Test Data를 통한 이탈(만족) 예측
  Accuracy : 93.8%  
  ROC-AUC Score : 0.994
 
-항공사 이탈 여부를 예측하기 위해 중점적으로 봐야할 설문 항목,  그에 따른 전략 
+- 항공사 이탈 여부를 예측하기 위해 중점적으로 봐야할 설문 항목,  그에 따른 전략 
 
-1. Inflight wifi service 
+  1. Inflight wifi service 
     : 고객의 이탈 여부를 판단하기 위한 가장 중요한 항목으로 비행기 내의 더 좋은 wifi service를 제공.
    
-2. Type of Travel 
+  2. Type of Travel 
     : Personal Travel을 떠나는 고객을 대상으로 한 서비스 개선 필요.
 
-3. Online boarding 
+  3. Online boarding 
     : Online boarding을 이용하는데 어려움이 있는 노년층을 대상으로 서비스 개선 필요.
 
-4. Customer Type 
-    : disloyal 고객을 대상으로 한 서비스 개선 필요.
+  4. Customer Type 
+    : Disloyal 고객을 대상으로 한 서비스 개선 필요.
 

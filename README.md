@@ -14,12 +14,12 @@ Dataset : https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfac
 여행사를 이용할지에 대한 고객 이탈 예측을 하기 위해 데이터가 갖고 있는 feature중 **satisfaction**을 target으로 사용할 것입니다.
 satisfaction이라는 feature는 2개의 값을 갖는(만족, 중립 또는 불만족)범주형으로 되어 있고 데이터에 대한 설명에서도 이 feature를 target으로 사용하였습니다.
 
-베이스라인 모델 정확도는 **0.566%** 이고, 분류 모델의 평가지표로 사용할 것은 **Accuracy, AUC**를 사용할 것입니다. 
-그 이유는 Accuracy는 target의 비율이 서로 균등하다면 사용하는데 문제가 생기지 않아 베이스라인 모델 정확도가 0.566%임으로 Accuracy를 사용하는 데 문제가 없다고 판단하였고, AUC는 이진 분류 모델 성능 측정에 중요하게 사용되는 지표이기 때문에 총 두 가지를 사용할 것입니다. 
+베이스라인 모델 정확도는 **0.566%** 이고, 분류 모델의 평가지표로 사용할 것은 **Accuracy, ROC-AUC Score**를 사용할 것입니다. 
+그 이유는 Accuracy는 target의 비율이 서로 균등하다면 사용하는데 문제가 생기지 않아 베이스라인 모델 정확도가 0.566%임으로 Accuracy를 사용하는 데 문제가 없다고 판단하였고, ROC-AUC Score는 이진 분류 모델 성능 측정에 중요하게 사용되는 지표이기 때문에 총 두 가지를 사용할 것입니다. 
 
 ## 3. 데이터 시각화
 - 타겟 변수(만족, 중립 혹은 불만족) 비율 
-<img src = "https://github.com/wocns1457/Section2-Project/blob/main/images/img1.JPG" width="65%" height="65%">
+<img src = "https://github.com/wocns1457/Section2-Project/blob/main/images/img1.JPG" width="75%" height="75%">
 
 <br/>  
 
@@ -30,12 +30,12 @@ satisfaction이라는 feature는 2개의 값을 갖는(만족, 중립 또는 불
 
 - 연령, 비행거리 별 만족도 비율  
 
-<img src = "https://github.com/wocns1457/Section2-Project/blob/main/images/img2.JPG" width="40%" height="40%"> <img src = "https://github.com/wocns1457/Section2-Project/blob/main/images/img3.JPG" width="40%" height="40%">
+<img src = "https://github.com/wocns1457/Section2-Project/blob/main/images/img2.JPG" width="45%" height="45%"> <img src = "https://github.com/wocns1457/Section2-Project/blob/main/images/img3.JPG" width="45%" height="45%">
 
 <br/>  
 
-- 비행기 외적 요소와 내적 요소에 대한 평균치 기반 만족도  
-<img src = "https://github.com/wocns1457/Section2-Project/blob/main/images/img7.JPG" width="65%" height="65%">
+- 비행기 외적 요소와 내적 요소에 대한 평균치 기반 만족도 - 새로운 특성 추가
+<img src = "https://github.com/wocns1457/Section2-Project/blob/main/images/img7.JPG" width="75%" height="75%">
 
 ## 4. 머신러닝 방식 적용 및 교차검증
 baseline과 사용한 모델 성능 비교  
